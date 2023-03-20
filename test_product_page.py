@@ -5,10 +5,10 @@ from .pages.basket_page import BasketPage
 
 
 def test_guest_can_add_product_to_basket(browser):
-    link = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209/?promo=newYear"
+    link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=newYear2019"
     page = PageObject(browser, link)
     page.open()
-    time.sleep(8)
+
     #Ищем кнопку "Добавить в корзину" и сохраняем в button_add_to_busket
     button_add_to_basket = page.should_be_add_to_basket()
 
